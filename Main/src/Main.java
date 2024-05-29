@@ -1,6 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        String string = "Eldar";
-        System.out.println(string.replaceAll("^.|.$", ""));
+        System.out.println(convert(true));
+    }
+
+    public static String convert(boolean b) {
+        return String.valueOf(b);
     }
 }
