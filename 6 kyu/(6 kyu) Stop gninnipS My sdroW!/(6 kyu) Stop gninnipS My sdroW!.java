@@ -1,5 +1,5 @@
+// 1
 public class SpinWords {
-
   public String spinWords(String sentence) {
     String[] word = sentence.split(" ");
     if (word.length == 0)
@@ -16,5 +16,21 @@ public class SpinWords {
       }
     }
     return String.join(" ", word);
+  }
+}
+
+
+// 2
+import java.util.Arrays;
+
+public class SpinWords {
+  public String spinWords(String sentence) {
+    String[] words = sentence.split(" ");
+    for (int i=0; i<words.length; i++) {
+      if (words[i].length() >= 5) {
+        words[i] = new StringBuilder(words[i]).reverse().toString();
+      }
+    }
+    return String.join(" ",words);
   }
 }
