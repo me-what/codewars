@@ -1,15 +1,8 @@
-import java.util.ArrayList;
+// 1
 import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Collectors;
 
-public class Main {
-    public static void main(String[] args) {
-        System.out.println(check("The quick brown fox jumps over the lazy dog"));
-
-    }
-
-    public static boolean check(String string) {
+public class PangramChecker {
+    public boolean check(String string) {
         boolean[] mark = new boolean[26];
         int index = 0;
 
@@ -29,8 +22,4 @@ public class Main {
                 return (false);
         return (true);
     }
-
-
-    }
-
-
+}
