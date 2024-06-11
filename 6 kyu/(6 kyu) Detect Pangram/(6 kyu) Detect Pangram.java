@@ -23,3 +23,22 @@ public class PangramChecker {
         return (true);
     }
 }
+
+
+// 2
+public class PangramChecker {
+    public boolean check(String sentence){
+        for (char c = 'a'; c<='z'; c++)
+            if (!sentence.toLowerCase().contains("" + c))
+                return false;
+        return true;
+    }
+}
+
+
+// 3
+public class PangramChecker {
+    public boolean check(String sentence){
+        return sentence.chars().map(Character::toLowerCase).filter(Character::isAlphabetic).distinct().count() == 26;
+    }
+}
