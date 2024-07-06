@@ -1,5 +1,4 @@
 // 1
-
 public class Kata
 {
     public static String greet(String name)
@@ -42,7 +41,7 @@ public class Kata
     }
 }
 
-// 4
+// 5
 import java.util.*;
 public class Kata
 {
