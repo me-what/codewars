@@ -1,25 +1,3 @@
-// 1 Plain solution
-import java.*;
-
-public class Kata {
-    public static String reverseWords(final String original) {
-        String[] array = original.split(" ");
-        if (array.length == 0) {
-            return original;
-        }
-
-        List<String> res = new ArrayList<String>();
-        for (String w : array) {
-            StringBuilder r = new StringBuilder();
-            r.append(w);
-            r = r.reverse();
-            res.add(r.toString());
-        }
-        return String.join(" ", res);
-    }
-}
-
-
 // 2 Optimized solution
 import java.lang.StringBuilder;
 public class Reverse {
@@ -39,6 +17,28 @@ public static String reverseWords(final String original)
     }
     return String.join(" ", word);
 }
+}
+
+
+// 1 Plain solution
+import java.*;
+
+public class Kata {
+    public static String reverseWords(final String original) {
+        String[] array = original.split(" ");
+        if (array.length == 0) {
+            return original;
+        }
+
+        List<String> res = new ArrayList<String>();
+        for (String w : array) {
+            StringBuilder r = new StringBuilder();
+            r.append(w);
+            r = r.reverse();
+            res.add(r.toString());
+        }
+        return String.join(" ", res);
+    }
 }
 
 
