@@ -1,4 +1,15 @@
 // 1
+public class PangramChecker {
+    public boolean check(String sentence){
+        for (char c = 'a'; c <= 'z'; c++)
+            if (!sentence.toLowerCase().contains("" + c))
+                return false;
+        return true;
+    }
+}
+
+
+// 2
 import java.util.Arrays;
 
 public class PangramChecker {
@@ -21,17 +32,6 @@ public class PangramChecker {
             if (mark[i] == false)
                 return (false);
         return (true);
-    }
-}
-
-
-// 2
-public class PangramChecker {
-    public boolean check(String sentence){
-        for (char c = 'a'; c<='z'; c++)
-            if (!sentence.toLowerCase().contains("" + c))
-                return false;
-        return true;
     }
 }
 
