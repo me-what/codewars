@@ -1,9 +1,7 @@
 // 1
 public class Kata{
     public static String binaryAddition(int a, int b){
-        int c = a + b;
-        String binary = Integer.toBinaryString(c);
-        return binary;
+        return Integer.toBinaryString(a + b);
     }
 }
 
@@ -11,7 +9,9 @@ public class Kata{
 // 2
 public class Kata{
     public static String binaryAddition(int a, int b){
-        return Integer.toBinaryString(a + b);
+        int c = a + b;
+        String binary = Integer.toBinaryString(c);
+        return binary;
     }
 }
 
